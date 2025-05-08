@@ -1,0 +1,840 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Inter', sans-serif;
+  }
+  
+  /* Header Styles */
+  .desktop header {
+    width: 100%;
+    height: 62px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 5%;
+    gap: 30px;
+  }
+  
+  /* Logo Styles */
+  .desktop .logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.04em;
+  }
+  
+  .desktop .logo img {
+    width: 18.68px;
+    height: 22px;
+  }
+  
+  /* Menu Styles */
+  .desktop .menu {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #081E34;
+  }
+  
+  .desktop .menu button {
+    height: 38px;
+    padding: 10px 12px;
+    border: none;
+    border-radius: 100px;
+    background: none;
+    color: inherit;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    cursor: pointer;
+  }
+  
+  .desktop .home {
+    width: 64px;
+  }
+  
+  .desktop .about-us {
+    width: 100px;
+  }
+  
+  .desktop .how-it-works {
+    width: 111px;
+  }
+  
+  .desktop .get-started {
+    width: 102px;
+    background-color: #081E341F !important;
+  }
+  
+  .desktop .get-started:hover {
+    background-color: #4f4d4d !important;
+  }
+  
+  /* ----------- Responsive Styles ----------- */
+  @media (max-width: 768px) {
+    .desktop header {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      height: auto;
+      padding: 12px 5%;
+    }
+  
+    /* Hide all other buttons on small screens */
+    .desktop .menu .home,
+    .desktop .menu .about-us,
+    .desktop .menu .how-it-works {
+      display: none;
+    }
+  
+    /* Show only Get Started */
+    .desktop .menu {
+      display: flex;
+      justify-content: flex-end;
+      width: auto;
+      gap: 0;
+    }
+  
+    .desktop .menu .get-started {
+      width: auto;
+      padding: 8px 16px;
+      font-size: 14px;
+      background-color: #081E341F;
+    }
+  
+    /* Optional: reduce font/logo size for smaller screens */
+    .desktop .logo span {
+      font-size: 16px;
+    }
+  
+    .desktop .logo img {
+      width: 16px;
+      height: 19px;
+    }
+  }
+
+
+  
+/* Description Section */
+.desktop .description {
+    width: 100%;
+    height: 620px;
+    padding: 100px 5%;
+    gap: 165px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+/* Info Section */
+.desktop .info {
+    width: auto;
+    height: auto;
+    gap: 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Visual Content Section */
+.desktop .visualContent {
+    width: 619px;
+    height: 420px;
+    gap: 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 20px;
+    border-radius: 32px;
+    position: relative;
+}
+
+.desktop .visualContent img {
+    width: 139px;
+    height: 181px;
+    position: absolute;
+    left: 213px;
+    z-index: 10;
+}
+
+.desktop .fire-image {
+    width: 148px;
+    height: 172px;
+    position: absolute;
+    left: 460px !important;
+    top: 233px;
+    z-index: 10;
+}
+
+.desktop .image4 {
+    width: 687px !important;
+    height: 458px !important;
+    position: absolute;
+    top: -12px !important;
+    left: -34px !important;
+    z-index: 5;
+    border-radius: 24px;
+}
+
+/* Title Section */
+.desktop .title {
+    width: 100%;
+    text-align: left;
+}
+
+.desktop .hired-text {
+    width: 100%;
+    max-width: 495px;
+    height: auto;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 64px;
+    color: #081E34;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.desktop .description-text {
+    width: 100%;
+    max-width: 495px;
+    height: auto;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    color: #081E34;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.desktop .how-it-works-section {
+    width: 144px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #712FFF;
+    border-radius: 100px;
+    padding: 16px 24px;
+    border: none;
+    outline: none;
+}
+
+.desktop .how-it-works-text {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    color: #FFFFFF;
+    text-align: center;
+    cursor: pointer;
+}
+.desktop .how-it-works-section:hover {
+    background-color: #5d25d7; /* Optional: slightly darker on hover */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* "How It Works" Section */
+.desktop .how-it-works-section-new {
+    width: 1440px;
+    height: auto; /* allow height to grow */
+    padding: 100px 80px;
+    border-radius: 32px;
+    background-color: #E1DEE7;
+    display: flex;
+    flex-direction: column; /* stack children vertically */
+    align-items: center;
+    box-sizing: border-box;
+    margin: 0 auto;
+    gap: 40px; /* gap between .info and .frame-18 */
+}
+
+.desktop .how-it-works-section-new .info {
+    width: 351px;
+    height: 84px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    padding-top: 10px;
+    margin-top: -40px;
+}
+
+.desktop .how-it-works-section-new .info .description {
+    width: 269px;
+    height: 16px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.desktop .how-it-works-section-new .info .title {
+    width: 351px;
+    height: 56px;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 56px;
+    text-align: center;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: -80px;
+}
+.desktop .how-it-works-section-new .frame-18 {
+    width: 1280px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 48px;
+    margin: 35px;
+}
+
+/* Shared base styles for all info boxes */
+.desktop .how-it-works-section-new .frame-18 .info1,
+.desktop .how-it-works-section-new .frame-18 .info2,
+.desktop .how-it-works-section-new .frame-18 .info3 {
+    width: 400px;
+    height: 186px;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    border-radius: 16px;
+    padding: 24px;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: #081E34;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+/* Ellipse inside info1 */
+.desktop .how-it-works-section-new .frame-18 .info1 .ellipse {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background-color: transparent; /* Or add a color if needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Image inside the ellipse */
+.desktop .how-it-works-section-new .frame-18 .info1 .ellipse img {
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.desktop .how-it-works-section-new .frame-18 .info1 .headline-text {
+    width: 400px;
+    height: 28px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0;
+    text-align: left;
+    display: flex;
+    align-items: start; /* vertical alignment: middle */
+    margin-top: 40px;
+}
+.desktop .how-it-works-section-new .frame-18 .info1 .description-text{
+    width: 400px;
+    height: 22px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0;
+    display: flex;
+    text-align: left;
+    display: flex;
+    align-items: start; /* vertical alignment: middle */
+    margin-top: -5px ;
+    margin-left: -20px ;
+}
+.desktop .how-it-works-section-new .frame-18 .info2 .ellipse {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background-color: transparent; /* Or add a color if needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Image inside the ellipse */
+.desktop .how-it-works-section-new .frame-18 .info2 .ellipse img {
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.desktop .how-it-works-section-new .frame-18 .info2 .headline-text {
+    width: 400px;
+    height: 28px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0;
+    text-align: left;
+    display: flex;
+    align-items: start; /* vertical alignment: middle */
+    margin-top: 40px;
+}
+.desktop .how-it-works-section-new .frame-18 .info2 .description-text{
+    width: 400px;
+    height: 22px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0;
+    display: flex;
+    align-items: center; /* Vertical alignment: Middle */
+    margin-top: 0px ;
+    margin-left: -20px ;
+}
+.desktop .how-it-works-section-new .frame-18 .info3 .ellipse {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background-color: transparent; /* Or add a color if needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Image inside the ellipse */
+.desktop .how-it-works-section-new .frame-18 .info3 .ellipse img {
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.desktop .how-it-works-section-new .frame-18 .info3 .headline-text {
+    width: 400px;
+    height: 28px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0;
+    text-align: left;
+    display: flex;
+    align-items: start; /* vertical alignment: middle */
+    margin-top: 40px;
+}
+.desktop .how-it-works-section-new .frame-18 .info3 .description-text{
+    width: 400px;
+    height: 22px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0;
+    display: flex;
+    align-items: center; /* Vertical alignment: Middle */
+    margin-top: 0px ;
+    margin-left: -20px ;
+}
+
+.desktop .custom-section {
+    width: 1440px;
+    height: auto; /* Will hug the content */
+    padding: 100px 80px;
+    display: flex;
+    gap: 128px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    background-color: #F1F1F1; 
+}
+.desktop .inputfield .inputinfo {
+    width: 100%;
+    max-width: 757px;
+    height: auto; /* Hug content */
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    box-sizing: border-box;
+    
+}
+.desktop .inputinfo .lets-get-started-text {
+    width: 495px;
+    height: 64px;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 64px;
+    letter-spacing: 0;
+    display: flex;
+    align-items: center;
+}
+.desktop .inputinfo-description-text {
+    width: 495px;
+    height: 44px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0;
+    display: flex;
+    align-items: center; /* Vertical alignment: middle */
+    margin-top: 35px ;
+}
+.rectangle {
+    position: relative;
+    width: 100%;
+    max-width: 619px;
+    height: 50px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    border: 1px solid #E1DEE7;
+    box-sizing: border-box;
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 10px;
+  }
+  
+  .search-icon {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    left: 13px;
+    opacity: 0.5;
+  }
+  
+  .search-input {
+    flex: 1;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: #000;
+  }
+  
+  .find-job-button {
+    background-color: #6C63FF;
+    color: #fff;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    .rectangle {
+      max-width: 100%;
+      flex-direction: column;
+      align-items: stretch;
+      height: auto;
+      padding: 12px;
+      gap: 10px;
+    }
+  
+    .search-input {
+      width: 100%;
+    }
+  
+    .find-job-button {
+      width: 100%;
+    }
+  
+    .search-icon {
+      top: 15px;
+      left: 15px;
+    }
+  }
+.find-job-button {
+    position: absolute;
+    right: -128px;
+    top: 1px;
+    height: 34px;
+    padding: 25px 21px !important; /* increase size */
+    font-size: 16px; 
+    background-color: #712FFF;
+    color: #FFFFFF;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+    border-radius: 36px;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .find-job-button:hover {
+    background-color: #5a23d0;
+  }
+
+  .cv-submission {
+    width: 1440px;           /* Fill */
+    height: auto;            /* Hug: adapts to content */
+    min-height: 548px;       /* Minimum height */
+    padding: 64px 80px;      /* Top/Bottom: 64px, Left/Right: 80px */
+    display: flex;
+    flex-direction: column;
+    gap: 128px;              /* Space between children */
+    box-sizing: border-box;
+    position: relative;
+    background-color: #F1F1F1; 
+    margin: 0 auto;
+    
+   
+  }
+  
+  
+  .image5 {
+    width: 700px;
+    height: 466.67px;
+    position: absolute;
+    top: -23px;
+    left: -40px;
+    border-radius: 24px;
+    transform: translate(160px, 80px);
+    filter: none; 
+  }
+  .lightning {
+    position: absolute;
+    width: 87px;
+    height: 144px;
+    top: 138px;
+    left: 22px;
+    opacity: 1;
+    position: absolute;
+    filter: none;
+    z-index: 10 !important;
+    transform: translate(130px, 80px);
+    
+  }
+  
+  .star {
+    position: absolute;
+    width: 97px;
+    height: 94px;
+    top: 28px;
+    left: 213px;
+    opacity: 1;
+    position: absolute;
+    filter: none;
+    z-index: 10 !important;
+    transform: translate(150px, 70px);
+  }
+  .textsofCV {
+    width: fit-content;
+    height: fit-content;
+    max-width: 495px;
+    max-height: 214px;
+    gap: 32px;
+    position: absolute;
+    bottom: 300px; /* Position it at the bottom of the container */
+    left: 80%; /* Center the element horizontally */
+    transform: translate(-50%, 50px); /* Adjust position to truly center */
+  }
+  .cv-text {
+    width: 391px;
+    height: 56px;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 600;
+    font-size: 54px;
+    line-height: 56px;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    margin: 0;
+  }
+  .cv-text2 {
+    width: 495px;
+    height: 44px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    margin: 0;
+    position: relative;  /* Allows shifting the element */
+    top: 40px;           /* Adjust this value to move the text down */
+    left: 50%;           /* This centers the text horizontally */
+    transform: translateX(-50%); /* Centers text horizontally */
+  } 
+ 
+  
+  .Upload-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto; /* Hug content */
+    height: auto;
+    padding: 16px 24px 16px 16px;
+    gap: 8px;
+    border: none;
+    border-radius: 100px;
+    background-color: #712FFF;
+    color: #FFFFFF;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    cursor: pointer;
+    transform: translate(15px, 60px);
+  }
+  
+  .up-icon {
+    width: 18px;
+    height: 18px;
+    filter: brightness(0) saturate(100%) invert(100%);
+  }
+  
+  .Upload-button:hover {
+    background-color: #5a23d0;
+  } 
+
+
+  .footer {
+    width: 1440px;
+    min-height: 172px;
+    padding: 32px 80px;
+    border-top-left-radius: 32px;
+    border-top-right-radius: 32px;
+    display: flex;
+    gap: 32px;
+    justify-content: center; /* Center frame24 horizontally */
+    align-items: center; 
+    background-color: #FFFFFF; /* Example background */
+    margin: 0 auto;
+    border-radius: 8px;
+  }
+  .frame24 {
+    width: 1280px;
+    height: 38px;
+    gap: 105px;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .nav-links {
+    width: 372px;
+    height: 38px;
+    display: flex;
+    gap: 16px;
+    justify-content: space-around; /* Make sure links are left-aligned */
+    align-items: center;
+  }
+  .social-icon {
+    width: 24px;
+    height: 24px;
+  }
+  .credits-text {
+    width: 779px;
+    height: 18px;
+    opacity: 0.5;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: 0%;
+    /* text-align: center; */
+    vertical-align: middle;
+    
+    color: #081E34;
+    transform: translate(15px, 10px);
+  }
+  .made-with-text {
+    position: absolute;
+    bottom: -1610px;
+    right: 80px;
+    width: 258px;
+    height: 18px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    color: #081E34;
+
+  }
+  .credits-link {
+    text-decoration: underline;
+    color: #081E34;
+  }
+@media (max-width: 768px) {
+    .desktop header {
+        padding: 12px 20px;
+        gap: 20px;
+    }
+
+    .desktop .logo img {
+        width: 16px;
+        height: 20px;
+    }
+
+    .desktop .hired-text {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .desktop .description {
+        padding: 50px 20px;
+    }
+
+    .desktop .description-text {
+        font-size: 14px;
+    }
+}
